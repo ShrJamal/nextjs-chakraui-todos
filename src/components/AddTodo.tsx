@@ -48,7 +48,7 @@ export default function AddTodo() {
           Add
         </Button>
       </HStack>
-      {!error && (
+      {error && (
         <Text color="tomato">
           {error instanceof Error ? error.message : 'Something went wrong'}
         </Text>
