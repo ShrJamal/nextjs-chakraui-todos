@@ -1,4 +1,4 @@
-import { Todo } from '@prisma/client'
+import type { Todo } from '@prisma/client'
 import { useQuery } from 'react-query'
 
 export function useTodos() {

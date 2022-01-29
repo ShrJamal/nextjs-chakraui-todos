@@ -3,7 +3,7 @@ import { HStack, IconButton, Text } from '@chakra-ui/react'
 import { FaTrash } from 'react-icons/fa'
 
 import { useCompleteTodo, useDeleteTodo } from '../hooks'
-import { Todo } from '@prisma/client'
+import type { Todo } from '@prisma/client'
 
 export default function TodoItem({ todo }: { todo: Todo }) {
   const { mutate: deleteTodo } = useDeleteTodo()
